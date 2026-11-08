@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "chunkSize": 3145728,
+  "threshold": 15728640,
+  "generatedAt": "2026-11-08T06:29:03.508Z",
+  "files": {
+    "Build/1234.data.unityweb": {
+      "base": "Build/1234.data.unityweb",
+      "size": 744375214,
+      "chunks": 237,
+      "digits": 3,
+      "sha256": "d4fddc1a707c54ab98cf26470bb5589f3b72663e485d7d50651e84b3cdcfe402"
+    },
+    "Build/1234.wasm.unityweb": {
+      "base": "Build/1234.wasm.unityweb",
+      "size": 19646491,
+      "chunks": 7,
+      "digits": 2,
+      "sha256": "40561c492db710696056f07bb6c16b0743504afe5d7cb42da41360909ec95e68"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+SELF_DESTRUCT.LINE_1	i'm out
+SELF_DESTRUCT.LINE_2	Farewell
+SELF_DESTRUCT.LINE_3	Adieu
+SELF_DESTRUCT.LINE_4	sayonara
+SELF_DESTRUCT.LINE_5	Auf Wiedersehen
+SELF_DESTRUCT.LINE_6	adios
+SELF_DESTRUCT.LINE_7	ciao
+SELF_DESTRUCT.LINE_8	Au Revoir
+SELF_DESTRUCT.LINE_9	hasta la vista
+SELF_DESTRUCT.LINE_10	see You Later
+SELF_DESTRUCT.LINE_11	later
+SELF_DESTRUCT.LINE_12	peace OUT
+SELF_DESTRUCT.LINE_13	catch you later
+SELF_DESTRUCT.LINE_14	later gator
+SELF_DESTRUCT.LINE_15	toodles
+SELF_DESTRUCT.LINE_16	bye bye
+SELF_DESTRUCT.LINE_17	bye
+SELF_DESTRUCT.LINE_18	AAAAAAAAAAAAH!
+SELF_DESTRUCT.LINE_19	AAAAAAAAAAAAAAAAAAAAAAAH!
+SELF_DESTRUCT.LINE_20	bye... ... oh?
+SELF_DESTRUCT.LINE_21	this will hurt
+SELF_DESTRUCT.LINE_22	it's over for me
+SELF_DESTRUCT.LINE_23	why me?
+SELF_DESTRUCT.LINE_24	I'm sorry
+SELF_DESTRUCT.LINE_25	i see the light
+SELF_DESTRUCT.LINE_26	sad but necessary
+SELF_DESTRUCT.LINE_27	HEJ DÅ!
+SELF_DESTRUCT_CANCEL	SELF DESTRUCT SEQUENCE CANCELLED!
+LEFT_BEHIND.LINE_1	You left me.
+LEFT_BEHIND.LINE_2	They abandoned me.
+LEFT_BEHIND.LINE_3	My team betrayed me.
+LEFT_BEHIND.LINE_4	Everyone forgot me.
+LEFT_BEHIND.LINE_5	My friends doomed me.
+LEFT_BEHIND.LINE_6	The squad deserted me.
+LEFT_BEHIND.LINE_7	The group ditched me.
+LEFT_BEHIND.LINE_8	All of them discarded me.
+LEFT_BEHIND.LINE_9	Those I trusted left me.
+LEFT_BEHIND.LINE_10	My companions abandoned me.
+LEFT_BEHIND.LINE_11	I feel lost.
+LEFT_BEHIND.LINE_12	Why didn't they wait?
+LEFT_BEHIND.LINE_13	What did I do wrong?
+LEFT_BEHIND.LINE_14	I can't believe it.
+LEFT_BEHIND.LINE_15	How could they?
+LEFT_BEHIND.LINE_16	This can't be happening.
+LEFT_BEHIND.LINE_17	I'm on my own now.
+LEFT_BEHIND.LINE_18	They were my only hope.
+LEFT_BEHIND.LINE_19	I should have known.
+LEFT_BEHIND.LINE_20	It's so unfair.
+LEFT_BEHIND.LINE_21	They doomed me behind...
+LEFT_BEHIND.LINE_22	They deserted me alone...
+LEFT_BEHIND.LINE_23	They ditched me in the dark...
+LEFT_BEHIND.LINE_24	They discarded me without a word...
+LEFT_BEHIND.LINE_25	They left me without warning...
+LEFT_BEHIND.LINE_26	They abandoned me in silence...
+LEFT_BEHIND.LINE_27	They betrayed me without looking back...
+LEFT_BEHIND.LINE_28	They forgot me with no remorse...
+LEFT_BEHIND.LINE_29	Now, Those I trusted doomed me.
+LEFT_BEHIND.LINE_30	Now, My companions deserted me.
+TRUCK_WARNING	I need to get to the truck in...
+BETRAYAL_FAREWELL.LINE_1	betrayal
+BETRAYAL_FAREWELL.LINE_2	betrayal detected
+BETRAYAL_FAREWELL.LINE_3	i'm sorry
+BETRAYAL_FAREWELL.LINE_4	I failed
+BETRAYAL_FAREWELL.LINE_5	oh no, not again
+BETRAYAL_FAREWELL.LINE_6	teamwork makes the dream work
+BETRAYAL_FAREWELL.LINE_7	I thought we were friends
+BETRAYAL_FAREWELL.LINE_8	I thought we were a team
+BETRAYAL_FAREWELL.LINE_9	I thought we were in this together
+BETRAYAL_FAREWELL.LINE_10	I thought we were a family
+LOVE_POTION.TARGET_PLAYER.LINE_1	{playerName} makes my heart beep boop.
+LOVE_POTION.TARGET_PLAYER.LINE_2	Every time I see {playerName}, I declare bankruptcy.
+LOVE_POTION.TARGET_PLAYER.LINE_3	Just want to ride the C.A.R.T. with {playerName}.
+LOVE_POTION.TARGET_PLAYER.LINE_4	{playerName} is just super mega robocute, you know?
+LOVE_POTION.TARGET_PLAYER.LINE_5	{playerName} is my favorite wizard.
+LOVE_POTION.TARGET_PLAYER.LINE_6	I want to be with {playerName} so much!
+LOVE_POTION.TARGET_PLAYER.LINE_7	Thinking about {playerName} makes me download the latest update.
+LOVE_POTION.TARGET_PLAYER.LINE_8	{playerName}, you make me go gaga ding dong.
+LOVE_POTION.TARGET_PLAYER.LINE_9	Can't wait to make taxman happy with {playerName} again.
+LOVE_POTION.TARGET_PLAYER.LINE_10	Just want to go to Japan with {playerName}.
+LOVE_POTION.TARGET_PLAYER.LINE_11	I think I have robofeeling for {playerName}.
+LOVE_POTION.TARGET_PLAYER.LINE_12	{playerName} has the most financially stable smile.
+LOVE_POTION.TARGET_PLAYER.LINE_13	{playerName} is like the most upgraded dream.
+LOVE_POTION.TARGET_PLAYER.LINE_14	Whenever I see {playerName}, I robodance inside.
+LOVE_POTION.TARGET_PLAYER.LINE_15	{playerName} is my favorite silly goose.
+LOVE_POTION.TARGET_PLAYER.LINE_16	Can't wait to robotickle {playerName} again.
+LOVE_POTION.TARGET_PLAYER.LINE_17	{playerName}, you brighten my day!
+LOVE_POTION.TARGET_PLAYER.LINE_18	{playerName} makes my heart go woop woop.
+LOVE_POTION.TARGET_PLAYER.LINE_19	Just want to share secrets with {playerName}.
+LOVE_POTION.TARGET_PLAYER.LINE_20	Can't stop smiling because of {playerName}.
+LOVE_POTION.TARGET_POTION.LINE_1	This potion is simply robodorable.
+LOVE_POTION.TARGET_POTION.LINE_2	I adore this potion so much!
+LOVE_POTION.TARGET_POTION.LINE_3	Thinking about this potion makes me beep boop.
+LOVE_POTION.TARGET_POTION.LINE_4	This potion is my favorite sweetheart.
+LOVE_POTION.TARGET_POTION.LINE_5	Every time I see this potion, I confess love.
+LOVE_POTION.TARGET_POTION.LINE_6	This potion makes my day super mega awesome.
+LOVE_POTION.TARGET_POTION.LINE_7	I think I have a soft spot for this potion.
+LOVE_POTION.TARGET_POTION.LINE_8	Life is wonderful with this potion.
+LOVE_POTION.TARGET_POTION.LINE_9	This potion makes my heart boot up.
+LOVE_POTION.TARGET_POTION.LINE_10	Just thinking about this potion makes me happy.
+OUCH.LINE_1	Ouch! Ouch! Ouch!
+OUCH.LINE_2	Ow! Ow! Ow!
+OUCH.LINE_3	Oof! Oof! Oof!
+OUCH.LINE_4	Owie! Wowie! Zowie!
+OUCH.LINE_5	Ouchie! Ouchie! Ouchie!
+OUCH.LINE_6	error error error
+OUCH.LINE_7	system error
+OUCH.LINE_8	fatal error
+OUCH.LINE_9	error 404
+OUCH.LINE_10	runtime error
+OUCH.LINE_11	imma falling
+OUCH.LINE_12	falling over
+OUCH.LINE_13	ooooooooh!
+OUCH.LINE_14	oh nooooo!
+OUCH.LINE_15	AAAAAAH! AAH!
+OUCH.LINE_16	AAAAAAAAAAAAAAH!
+OUCH.LINE_17	AAAAAAAAAAAAAAAAAAAAAAAAAAAH!
+OUCH.LINE_18	OH! OH! OH!
+OUCH.LINE_19	AH! AH! AH!
+MUSEUM.ROBOT.COUNTDOWN_3	three
+MUSEUM.ROBOT.COUNTDOWN_2	two
+MUSEUM.ROBOT.COUNTDOWN_1	one
+MUSEUM.ROBOT.GREEN_LIGHT_1	moving allowed
+MUSEUM.ROBOT.GREEN_LIGHT_2	dance
+MUSEUM.ROBOT.GREEN_LIGHT_3	run
+MUSEUM.ROBOT.GREEN_LIGHT_4	move your body
+MUSEUM.ROBOT.GREEN_LIGHT_5	keep moving
+MUSEUM.ROBOT.GREEN_LIGHT_6	faster
+MUSEUM.ROBOT.GREEN_LIGHT_7	twirl
+MUSEUM.ROBOT.GREEN_LIGHT_8	go go go
+MUSEUM.ROBOT.GREEN_LIGHT_9	entertain me
+MUSEUM.ROBOT.GREEN_LIGHT_10	wiggle
+MUSEUM.ROBOT.RED_LIGHT_1	stop
+MUSEUM.ROBOT.RED_LIGHT_2	no moving
+MUSEUM.ROBOT.RED_LIGHT_3	freeze
+MUSEUM.ROBOT.RED_LIGHT_4	stand still
+MUSEUM.ROBOT.RED_LIGHT_5	do not move
+MUSEUM.ROBOT.RED_LIGHT_6	not one step
+MUSEUM.ROBOT.RED_LIGHT_7	stay

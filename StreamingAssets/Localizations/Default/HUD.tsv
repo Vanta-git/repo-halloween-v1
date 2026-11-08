@@ -1,0 +1,202 @@
+BIG_MESSAGE.EXTRACTION.ACTIVATED	Extraction point activated
+BIG_MESSAGE.EXTRACTION.COMPLETED	Extraction point completed
+FOCUS.EXTRACTION.FILL_VALUABLES	Fill the extraction point with valuables
+FOCUS.EXTRACTION.AVOID_GRENADES	Avoid the grenades!
+FOCUS.EXTRACTION.FIND_NEXT	Find the next extraction point
+FOCUS.EXTRACTION.BACK_TO_TRUCK	Get back to the truck!
+TUTORIAL.TRANSITION_TEXT	Good job!
+TUTORIAL.MOVEMENT.TEXT	Use [move] to move.
+TUTORIAL.MOVEMENT.FOCUS_TEXT	Move to fill the progress bar!
+TUTORIAL.MOVEMENT.DUMMY_TEXT	Use [move] on your device until the progress bar is filled!
+TUTORIAL.JUMPING.TEXT	Press [jump] to jump.
+TUTORIAL.JUMPING.FOCUS_TEXT	Jump to fill the progress bar!
+TUTORIAL.JUMPING.DUMMY_TEXT	Press [jump] to do jumps until the progress bar is filled!
+TUTORIAL.SNEAKING.TEXT	Press [crouch] to sneak. Monsters are less likely to see you.
+TUTORIAL.SNEAKING.FOCUS_TEXT	Sneak to fill the progress bar!
+TUTORIAL.SNEAKING.DUMMY_TEXT	Hold [crouch] and use [move] until the progress bar is filled!
+TUTORIAL.HIDING.TEXT	Use [crouch] to sneak under stuff and hide.
+TUTORIAL.HIDING.FOCUS_TEXT	Hide to fill the progress bar!
+TUTORIAL.HIDING.DUMMY_TEXT	Hold [crouch] and walk in under a prop, stay there until you fill the progress bar!
+TUTORIAL.SPRINTING.TEXT	Hold down [sprint] to sprint. This drains your energy.
+TUTORIAL.SPRINTING.FOCUS_TEXT	Sprint to fill the progress bar!
+TUTORIAL.SPRINTING.DUMMY_TEXT	Hold [sprint] and use [move] to sprint until you filled the progress bar! If the energy runs out, wait for it to regenerate!
+TUTORIAL.TUMBLING.TEXT	Run and press [tumble] to fall with style. Jumping also helps!
+TUTORIAL.TUMBLING.FOCUS_TEXT	Run, jump and fall to fill the progress bar!
+TUTORIAL.TUMBLING.DUMMY_TEXT	Run with [sprint], jump with [jump] and press [tumble] to throw yourself. Do it until you fill the progress bar!
+TUTORIAL.GRABBING.TEXT	Grab objects using [grab].
+TUTORIAL.GRABBING.FOCUS_TEXT	Carry that thing to fill the progress bar!
+TUTORIAL.GRABBING.DUMMY_TEXT	Press and hold [grab] on an object until you fill the progress bar!
+TUTORIAL.PUSHING_AND_PULLING.TEXT	Use [pushAndPull] to alter the distance of grabbed objects.
+TUTORIAL.PUSHING_AND_PULLING.FOCUS_TEXT	Alter the distance of a grabbed item!
+TUTORIAL.PUSHING_AND_PULLING.DUMMY_TEXT	Press and hold [grab] on an object and use [pushAndPull] to alter the distance of the item you grabbed!
+TUTORIAL.ROTATING.TEXT	Rotate grabbed objects using [grab2].
+TUTORIAL.ROTATING.FOCUS_TEXT	Rotate stuff to fill the progress bar!
+TUTORIAL.ROTATING.DUMMY_TEXT	While holding an object with [grab], press and hold [grab2] and move your aim to rotate it. Rotate until you fill the progress bar!
+TUTORIAL.ITEM_TOGGLING.TEXT	Grab and press [interact] to toggle items.
+TUTORIAL.ITEM_TOGGLING.FOCUS_TEXT	Toggle that thing on and off!
+TUTORIAL.ITEM_TOGGLING.DUMMY_TEXT	Grab the ball with [grab] and toggle it on and off using [interact] until you fill the progress bar!
+TUTORIAL.INVENTORY_FILL.TEXT	Grab an Item and use [inventory1]/[inventory2]/[inventory3] to put it in your inventory.
+TUTORIAL.INVENTORY_FILL.FOCUS_TEXT	Fill your entire inventory!
+TUTORIAL.INVENTORY_FILL.DUMMY_TEXT	While holding an item with [grab], press [inventory1]/[inventory2]/[inventory3]. Fill all spots in your inventory to complete the progress bar!
+TUTORIAL.INVENTORY_EMPTY.TEXT	Use [inventory1]/[inventory2]/[inventory3] to take items out of your inventory.
+TUTORIAL.INVENTORY_EMPTY.FOCUS_TEXT	Empty your entire inventory!
+TUTORIAL.INVENTORY_EMPTY.DUMMY_TEXT	Use [inventory1]/[inventory2]/[inventory3] and empty all spots to fill the progress bar!
+TUTORIAL.MAP.TEXT	Use [map] to view the map. The map is <b><u>IMPORTANT</u></b> for navigation.
+TUTORIAL.MAP.FOCUS_TEXT	Check the map!
+TUTORIAL.MAP.DUMMY_TEXT	Hold down [map] and view it until you have filled the progress bar!
+TUTORIAL.CART_HANDLING_1.TEXT	This is a C.A.R.T. Grab it by the handle.
+TUTORIAL.CART_HANDLING_1.FOCUS_TEXT	Walk around with the C.A.R.T. a little!
+TUTORIAL.CART_HANDLING_1.DUMMY_TEXT	Grab the C.A.R.T. by the handle with [grab] and walk around with it until you have filled the progress bar!
+TUTORIAL.CART_HANDLING_2.TEXT	Fill C.A.R.T.s with valuables. C.A.R.T.s are <b><u>IMPORTANT</u></b> for carrying more stuff.
+TUTORIAL.CART_HANDLING_2.FOCUS_TEXT	Fill the C.A.R.T. with valuables!
+TUTORIAL.CART_HANDLING_2.DUMMY_TEXT	Put three items into the C.A.R.T.
+TUTORIAL.EXTRACTION_POINTS.TEXT	Activate and fill <b><u>EXTRACTION POINTS</u></b> with valuables.
+TUTORIAL.EXTRACTION_POINTS.FOCUS_TEXT	Extract the valuables!
+TUTORIAL.EXTRACTION_POINTS.DUMMY_TEXT	HELLO! FILL THE <b><u>EXTRACTION POINT</u></b> WITH VALUABLES!
+TUTORIAL.TRUCK.TEXT	Enter the <b><u>TRUCK</u></b> and send a message to your boss in order to leave a level.
+TUTORIAL.TRUCK.FOCUS_TEXT	Get into the truck and send a message!
+TUTORIAL.TRUCK.DUMMY_TEXT	Walk into the truck, grab and hold the message area on the truck screen with [grab] to send a message!
+TUTORIAL.HEALING.TEXT	Share your health with other players by grabbing their necks!
+TUTORIAL.REVIVING.TEXT	Revive other players by extracting their heads!
+TUTORIAL.CHARGING_STATION.TEXT	Buy <b><u>ENERGY CRYSTALS</u></b> for the <b><u>CHARGING STATION</u></b> to recharge and repair your gear!
+TUTORIAL.ONLY_ONE_EXTRACTION.TEXT	Only one <b><u>EXTRACTION POINT</u></b> can be active at a time, find the current one using your map!
+TUTORIAL.CHAT.TEXT	Press [chat] to open the chat! It's fun!
+TUTORIAL.FINAL_EXTRACTION.TEXT	Time to leave, the truck heals you and revives carried player heads!
+TUTORIAL.MULTIPLE_EXTRACTIONS.TEXT	This level has multiple <b><u>EXTRACTION POINTS</u></b>, you must clear them all to leave!
+TUTORIAL.SHOP.TEXT	This is the <b><u>SHOP</u></b>, extract items to purchase. No harm lasts here!
+TUTORIAL.EXPRESSIONS.TEXT	Use [expression1]/[expression2]/[expression3]/[expression4]/[expression5]/[expression6] to make expressions. You can even mix!
+TUTORIAL.OVERCHARGE_1.TEXT	Grabbing a monster will now cause overcharge, when full you get blasted.
+TUTORIAL.OVERCHARGE_2.TEXT	Multiple people will dampen the overcharge effect.
+TUTORIAL.HEAD_SPECTATE_1.TEXT	While dead your head charges, use that charge to briefly possess your head.
+TUTORIAL.HEAD_SPECTATE_2.TEXT	While possessing your head, hold [jump] to jump. Hold longer to jump higher at a greater cost.
+TUTORIAL.ENEMY_ELSA.TEXT	PET THE DOG!
+MOON_UI.SKIP	[back] to skip
+TUTORIAL.EXTRACTION_REMINDER.TEXT	Fill <b><u>EXTRACTION POINTS</u></b> with valuables.
+TUTORIAL.COSMETIC_WORLD_OBJECT_1.TEXT	This is a <b><u>COSMETIC BOX</u></b>, extract it for a reward.
+TUTORIAL.COSMETIC_WORLD_OBJECT_2.TEXT	If it gets damaged, you can <b><u>HEAL</u></b> it using your own health.
+TUTORIAL.COSMETIC_SHOP_MACHINE.TEXT	Insert <b><u>TAX TOKENS</u></b> into the shop machine to claim your rewards.
+FOCUS.PREFIX	FOCUS
+FOCUS.SHOP.INTRO	Buy stuff in the shop
+FOCUS.TRUCK.INTRO	Enjoy the ride, recharge stuff and GEAR UP!
+COSMETIC_SHOP_MACHINE.INFO_TEXT	Press [interact] to insert tax token
+ITEM.CART_CANNON	C.A.R.T. Cannon
+ITEM.CART_LASER	C.A.R.T. Laser
+ITEM.CART_MEDIUM	C.A.R.T.
+ITEM.CART_SMALL	POCKET C.A.R.T.
+ITEM.DRONE_BATTERY	Recharge Drone
+ITEM.DRONE_FEATHER	Feather Drone
+ITEM.DRONE_INDESTRUCTIBLE	Indestructible Drone
+ITEM.DRONE_TORQUE	Roll Drone
+ITEM.DRONE_ZERO_GRAVITY	Zero Gravity Drone
+ITEM.DUCK_BUCKET	Duck Bucket
+ITEM.EXTRACTION_TRACKER	Extraction Tracker
+ITEM.GRENADE_DUCT_TAPED	Duct Taped Grenades
+ITEM.GRENADE_EXPLOSIVE	Grenade
+ITEM.GRENADE_HUMAN	Human Grenade
+ITEM.GRENADE_SHOCKWAVE	Shockwave Grenade
+ITEM.GRENADE_STUN	Stun Grenade
+ITEM.GUN_HANDGUN	Gun
+ITEM.GUN_LASER	Photon Blaster
+ITEM.GUN_SHOCKWAVE	Pulse Pistol
+ITEM.GUN_SHOTGUN	Shotgun
+ITEM.GUN_STUN	Boltzap
+ITEM.GUN_TRANQ	Tranq Gun
+ITEM.HEALTH_PACK_LARGE	Large Health Pack (100)
+ITEM.HEALTH_PACK_MEDIUM	Medium Health Pack (50)
+ITEM.HEALTH_PACK_SMALL	Small Health Pack (25)
+ITEM.LEAF_BLOWER	Leaf Blower
+ITEM.MELEE_BASEBALL_BAT	Baseball Bat
+ITEM.MELEE_FRYING_PAN	Frying Pan
+ITEM.MELEE_INFLATABLE_HAMMER	Inflatable Hammer
+ITEM.MELEE_SLEDGE_HAMMER	Sledge Hammer
+ITEM.MELEE_STUN_BATON	Prodzap
+ITEM.MELEE_SWORD	Sword
+ITEM.MINE_EXPLOSIVE	Explosive Mine
+ITEM.MINE_SHOCKWAVE	Shockwave Mine
+ITEM.MINE_STUN	Trapzap
+ITEM.ORB_ZERO_GRAVITY	Zero Gravity Orb
+ITEM.PHASE_BRIDGE	Phase Bridge
+ITEM.POWER_CRYSTAL	Energy Crystal
+ITEM.REVIVE_ITEM	Defibro
+ITEM.RUBBER_DUCK	Rubber Duck
+ITEM.STAFF_TORQUE	Roll Staff
+ITEM.STAFF_VOID	Void Staff
+ITEM.STAFF_ZERO_GRAVITY	Zero Gravity Staff
+ITEM.UPGRADE_DEATH_HEAD_BATTERY	Death Head Battery Upgrade
+ITEM.UPGRADE_MAP_PLAYER_COUNT	Map Player Count Upgrade
+ITEM.UPGRADE_PLAYER_CROUCH_REST	Crouch Rest Upgrade
+ITEM.UPGRADE_PLAYER_ENERGY	Stamina Upgrade
+ITEM.UPGRADE_PLAYER_EXTRA_JUMP	Extra Jump Upgrade
+ITEM.UPGRADE_PLAYER_GRAB_RANGE	Range Upgrade
+ITEM.UPGRADE_PLAYER_GRAB_STRENGTH	Strength Upgrade
+ITEM.UPGRADE_PLAYER_HEALTH	Health Upgrade
+ITEM.UPGRADE_PLAYER_SPRINT_SPEED	Sprint Speed Upgrade
+ITEM.UPGRADE_PLAYER_TUMBLE_CLIMB	Tumble Climb Upgrade
+ITEM.UPGRADE_PLAYER_TUMBLE_LAUNCH	Tumble Launch Upgrade
+ITEM.UPGRADE_PLAYER_TUMBLE_WINGS	Tumble Wings Upgrade
+ITEM.VALUABLE_TRACKER	Valuable Tracker
+ITEM.VEHICLE_SEMISCOOTER	Hauler
+ITEM.VEHICLE_SEMISCOOTER_SMALL	Scout
+ITEM.WALKIE_TALKIE	Semibot Walkie
+ITEM.WALKIE_TALKIE_BOX	Semibot Walkies
+STATS.UPGRADES.HEADER	Upgrades
+LEVEL.HEADER	Level
+STATS.UPGRADE.CROUCH_REST	Crouch Rest
+STATS.UPGRADE.DEATH_HEAD_BATTERY	Death Head Battery
+STATS.UPGRADE.EXTRA_JUMP	Extra Jump
+STATS.UPGRADE.HEALTH	Health
+STATS.UPGRADE.LAUNCH	Tumble Launch
+STATS.UPGRADE.MAP_PLAYER_COUNT	Map Player Count
+STATS.UPGRADE.RANGE	Range
+STATS.UPGRADE.SPEED	Sprint Speed
+STATS.UPGRADE.STAMINA	Stamina
+STATS.UPGRADE.STRENGTH	Strength
+STATS.UPGRADE.TUMBLE_CLIMB	Tumble Climb
+STATS.UPGRADE.TUMBLE_WINGS	Tumble Wings
+ENEMY.ANIMAL	Animal
+ENEMY.BANG	Banger
+ENEMY.BEAMER	Clown
+ENEMY.BIRTHDAY_BOY	Birthday Boy
+ENEMY.BOMB_THROWER	Cleanup Crew
+ENEMY.BOWTIE	Bowtie
+ENEMY.CEILING_EYE	Peeper
+ENEMY.DUCK	Apex Predator
+ENEMY.ELSA	Elsa
+ENEMY.FLOATER	Mentalist
+ENEMY.GNOME	Gnome
+ENEMY.HEAD	Headman
+ENEMY.HEAD_GRABBER	Headgrab
+ENEMY.HEART_HUGGER	Heart Hugger
+ENEMY.HIDDEN	Hidden
+ENEMY.HUNTER	Huntsman
+ENEMY.OOGLY	Oogly
+ENEMY.ROBE	Robe
+ENEMY.RUNNER	Reaper
+ENEMY.SHADOW	Loom
+ENEMY.SLOW_MOUTH	Spewer
+ENEMY.SLOW_WALKER	Trudge
+ENEMY.SPINNY	Gambit
+ENEMY.THIN_MAN	Shadow Child
+ENEMY.TICK	Tick
+ENEMY.TRICYCLE	Bella
+ENEMY.TUMBLER	Chef
+ENEMY.UPSCREAM	Upscream
+ENEMY.VALUABLE_THROWER	Rugrat
+UPGRADE_STAND.INTERACT	Hold to Reroll ({cost})
+ARENA.WINNER.KING	King of the Losers!
+ARENA.WINNER.LOSERS	Everyone's a Loser!
+ARENA.MESSAGE.LAST_LOSER_STANDING	Last Loser Standing
+ARENA.MESSAGE.GAME_OVER	Game Over
+SPECTATE_LIST.HEADER	The Broken Ones:
+ITEM.CART.MODE_STRONG	Mode: Strong
+ITEM.CART.MODE_WEAK	Mode: Weak
+CHAT.PREFIX	Chat:
+SPECTATE_HEAD.PROMPT	Press [interact]
+ENEMY.SNATCHER	Pony
+MAP.SIGNAL_OFFLINE	Signal Offline
+MAP.SHOP.EMPTY	Empty
+MAP.SHOP.TITLE	Shopping List
+TUTORIAL.GAMEPAD_PUSHING_AND_PULLING.TEXT	Use [pushPull] and aim [aim] to alter the distance of grabbed objects.
+TUTORIAL.GAMEPAD_PUSHING_AND_PULLING.DUMMY_TEXT	While grabbing an object with [grab], hold [pushPull] to alter distance with [aim] until you fill the progress bar!
+ITEM.GUN_REVOLVER	Human Gun
+ITEM.ORB_BATTERY	Charging Orb

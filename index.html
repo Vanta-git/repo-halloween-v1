@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>R.E.P.O. WebGL</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #0b0b0d;
+      color: #e9e9ee;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-user-select: none;
+      user-select: none;
+      touch-action: none;
+    }
+    #unity-container {
+      position: relative;
+      width: min(100vw, calc(100vh * 16 / 9));
+      height: min(100vh, calc(100vw * 9 / 16));
+      background: #000;
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+    }
+    #unity-canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #000;
+      outline: none;
+      touch-action: none;
+    }
+    #unity-loading-bar {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      background: radial-gradient(circle at 50% 40%, #1a1a20 0%, #050506 70%);
+      z-index: 5;
+      transition: opacity 0.35s ease;
+    }
+    #unity-loading-bar .logo {
+      font-size: clamp(28px, 6vw, 64px);
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      color: #f2f2f5;
+      text-shadow: 0 0 30px rgba(255, 120, 30, 0.45);
+    }
+    #unity-loading-bar .subtitle {
+      font-size: clamp(11px, 1.4vw, 14px);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #9a9aa6;
+      margin-top: -10px;
+    }
+    #unity-progress-bar-empty {
+      width: min(60%, 420px);
+      height: 6px;
+      border-radius: 4px;
+      background: #232329;
+      overflow: hidden;
+    }
+    #unity-progress-bar-full {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #ff7a18, #ffb347);
+      transition: width 0.15s linear;
+    }
+    #loading-text {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: #8b8b96;
+      min-height: 16px;
+    }
+    #unity-warning {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      display: none;
+      font-size: 13px;
+    }
+    #unity-warning div {
+      padding: 10px 14px;
+      background: #ffb020;
+      color: #191400;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+    #fullscreen-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      z-index: 30;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(15, 15, 18, 0.72);
+      color: #e9e9ee;
+      font-size: 19px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #fullscreen-btn:hover {
+      background: rgba(40, 40, 46, 0.9);
+    }
+    #rotate-hint {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 40;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(15, 15, 18, 0.86);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: #d7d7de;
+      display: none;
+      pointer-events: none;
+    }
+    @media (orientation: portrait) and (max-width: 900px) {
+      #rotate-hint { display: block; }
+      #unity-container {
+        width: 100vw;
+        height: min(100vh, calc(100vw * 9 / 16));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="unity-container">
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+    <div id="unity-loading-bar">
+      <div class="logo">R.E.P.O.</div>
+      <div class="subtitle">WebGL Edition</div>
+      <div id="unity-progress-bar-empty"><div id="unity-progress-bar-full"></div></div>
+      <div id="loading-text">Loading...</div>
+    </div>
+    <div id="unity-warning"></div>
+    <button id="fullscreen-btn" title="Fullscreen" aria-label="Fullscreen">&#9974;</button>
+  </div>
+  <div id="rotate-hint">Rotate your device to landscape for the best experience.</div>
+
+  <!-- Reassembles the 3 MB parts of Build/*.unityweb into one stream for the loader. -->
+  <script src="split.js"></script>
+
+  <script>
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingBar = document.querySelector("#unity-loading-bar");
+    var progressBarFull = document.querySelector("#unity-progress-bar-full");
+    var loadingText = document.querySelector("#loading-text");
+    var warningBanner = document.querySelector("#unity-warning");
+    var unityInstance = null;
+
+    function unityShowBanner(msg, type) {
+      var div = document.createElement("div");
+      div.innerHTML = msg;
+      warningBanner.appendChild(div);
+      if (type == "error") {
+        div.style = "background: #d92b2b; color: #fff; padding: 10px;";
+      } else {
+        setTimeout(function () {
+          if (div.parentNode) warningBanner.removeChild(div);
+          warningBanner.style.display = warningBanner.children.length ? "block" : "none";
+        }, 6000);
+      }
+      warningBanner.style.display = warningBanner.children.length ? "block" : "none";
+    }
+
+    // Weak phones and low-memory laptops get a smaller WebGL back buffer.
+    var lowEnd = false;
+    try {
+      var memory = navigator.deviceMemory || 8;
+      var cores = navigator.hardwareConcurrency || 8;
+      lowEnd = memory <= 4 || cores <= 4 || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || "");
+    } catch (error) {
+      lowEnd = false;
+    }
+
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/1234.loader.js";
+    var config = {
+      arguments: [],
+      dataUrl: buildUrl + "/1234.data.unityweb",
+      frameworkUrl: buildUrl + "/1234.framework.js.unityweb",
+      codeUrl: buildUrl + "/1234.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "REPO Web",
+      productName: "R.E.P.O. WebGL",
+      productVersion: "1.0",
+      showBanner: unityShowBanner,
+      // Cap the back buffer on high-DPI screens and cut it further on weak hardware.
+      devicePixelRatio: lowEnd ? 0.7 : Math.min(window.devicePixelRatio || 1, 1),
+      // Persist Application.persistentDataPath writes (worlds, cosmetics, settings)
+      // to IndexedDB automatically so they survive reloads and browser restarts.
+      autoSyncPersistentDataPath: true,
+      errorHandler: function (error, url, line) {
+        console.error("Unity WebGL error: " + error + " (" + url + ":" + line + ")");
+        return false;
+      }
+    };
+
+    function hideLoadingBar() {
+      if (!loadingBar) return;
+      loadingBar.style.opacity = "0";
+      setTimeout(function () {
+        if (loadingBar && loadingBar.parentNode) loadingBar.parentNode.removeChild(loadingBar);
+      }, 400);
+    }
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = function () {
+      createUnityInstance(canvas, config, function (progress) {
+        var percent = Math.round(progress * 100);
+        progressBarFull.style.width = percent + "%";
+        loadingText.textContent = "Loading... " + percent + "%";
+      }).then(function (instance) {
+        unityInstance = instance;
+        hideLoadingBar();
+        try { canvas.focus(); } catch (error) {}
+      }).catch(function (message) {
+        loadingText.textContent = "Failed to load: " + message;
+        unityShowBanner("Failed to load the game: " + message, "error");
+      });
+    };
+    script.onerror = function () {
+      unityShowBanner("Could not load the game build. Serve this folder over HTTP (use PLAY.cmd).", "error");
+      loadingText.textContent = "Build files not found.";
+    };
+    document.body.appendChild(script);
+
+    document.querySelector("#fullscreen-btn").addEventListener("click", function () {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+        return;
+      }
+      var request = container.requestFullscreen || container.webkitRequestFullscreen;
+      if (request) {
+        request.call(container);
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock("landscape").catch(function () {});
+        }
+      }
+    });
+
+    // Flush worlds/cosmetics to IndexedDB before the tab goes away.
+    function flushSaves() {
+      if (!unityInstance) return;
+      try {
+        unityInstance.SendMessage("WebGLPersistence", "Flush");
+      } catch (error) {
+        // The game may still be loading; autoSyncPersistentDataPath covers it.
+      }
+    }
+    window.addEventListener("pagehide", flushSaves);
+    window.addEventListener("beforeunload", flushSaves);
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") flushSaves();
+    });
+
+    canvas.addEventListener("click", function () {
+      try { canvas.focus(); } catch (error) {}
+    });
+  </script>
+</body>
+</html>
